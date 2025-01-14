@@ -37,7 +37,7 @@ I18N_SUBSITES = {
     },
     'en': {
         'OUTPUT_PATH': 'output/en',
-        'TIMEZONE': 'Europe/London',
+        'TIMEZONE': 'Europe/Berlin',
     },
 }
 

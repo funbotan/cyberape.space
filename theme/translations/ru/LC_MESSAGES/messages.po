@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2025-01-14 19:30+0100\n"
+"POT-Creation-Date: 2025-01-14 21:28+0100\n"
 "PO-Revision-Date: 2018-04-16 17:58+0300\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ru\n"
@@ -23,15 +23,15 @@ msgstr ""
 msgid "Archive for"
 msgstr "Архив"
 
-#: templates/article.html:42 templates/article.html:51 templates/index.html:36
+#: templates/article.html:42 templates/article.html:51 templates/index.html:35
 msgid "Read time:"
 msgstr "Время чтения:"
 
-#: templates/article.html:74 templates/base.html:101
+#: templates/article.html:74 templates/base.html:46
 msgid "Return to blog index"
 msgstr "Вернуться на главную"
 
-#: templates/article.html:74 templates/base.html:101
+#: templates/article.html:74 templates/base.html:46
 msgid "Back"
 msgstr "Назад"
 
@@ -44,30 +44,6 @@ msgstr "Блог"
 msgid "Authors"
 msgstr "Авторы"
 
-#: templates/base.html:106
-msgid "Blog"
-msgstr ""
-
-#: templates/base.html:108
-msgid "Books"
-msgstr ""
-
-#: templates/base.html:112
-msgid "The Chimpanzee Effect"
-msgstr ""
-
-#: templates/base.html:115 templates/translations.html:3
-msgid "Translations"
-msgstr "Переводы"
-
-#: templates/base.html:121
-msgid "Literary blog about philosophy, futurism and science fiction"
-msgstr ""
-
-#: templates/base.html:124
-msgid "Please keep in mind that I learned English as a foreign language"
-msgstr ""
-
 #: templates/categories.html:8 templates/category.html:9
 msgid "Categories"
 msgstr "Категории"
@@ -76,17 +52,21 @@ msgstr "Категории"
 msgid "Tags"
 msgstr "Теги"
 
+#: templates/translations.html:3
+msgid "Translations"
+msgstr "Переводы"
+
 #~ msgid "Moral realism"
 #~ msgstr "Моральный реализм"
 
 #~ msgid "Blog"
-#~ msgstr "Блог"
+#~ msgstr ""
 
 #~ msgid "Projects"
 #~ msgstr "Проекты"
 
 #~ msgid "The Chimpanzee Effect"
-#~ msgstr "Эффект шимпанзе"
+#~ msgstr ""
 
 #~ msgid "Solutions"
 #~ msgstr "Решения"
@@ -134,16 +114,13 @@ msgstr "Теги"
 #~ msgstr "Черный аттрактор"
 
 #~ msgid "Books"
-#~ msgstr "Книги"
+#~ msgstr ""
 
 #~ msgid "YouTube"
 #~ msgstr ""
 
 #~ msgid "Literary blog about philosophy, futurism and science fiction"
 #~ msgstr ""
-#~ "Блог о том, как предсказывать будущее"
-#~ " с помощью науки и писать об "
-#~ "этом научную фантастику"
 
 #~ msgid "More details..."
 #~ msgstr "Подробнее..."

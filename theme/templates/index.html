@@ -27,7 +27,6 @@
         <a href="{{ SITEURL }}/{{ article.url }}" class="implicit">
           <object>
           <div class="box" style="background-color: black; background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url({{ article.cover }});">
-            <!-- <a href="{{ SITEURL }}/{{ article.category.url }}" class="category" style="{{ category_colors[article.category|string] | default('') }}">{{ category_icons[article.category|string] | default("") }} {{ article.category }}</a> -->
             <span class="centered">
             <h2>{{ article.title }}</h2>
             <p class="cover-title" style="color:#fff;">{{ article.summary }}</p>
