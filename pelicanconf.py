@@ -42,8 +42,7 @@ I18N_SUBSITES = {
     },
 }
 
-# Feed generation is usually not desired when developing
-#FEED_DOMAIN = 'http://rss.cyberape.space'
+FEED_DOMAIN = 'http://rss.cyberape.space'
 FEED_RSS = 'rss'
 FEED_ATOM = 'atom'
 FEED_ALL_ATOM = None
@@ -54,7 +53,6 @@ AUTHOR_FEED_RSS = None
 
 DEFAULT_PAGINATION = False
 
-# Uncomment following line if you want document-relative URLs when developing
 RELATIVE_URLS = True
 DELETE_OUTPUT_DIRECTORY = True
 OUTPUT_RETENTION = [".git", "CNAME", "_config.yml"]
