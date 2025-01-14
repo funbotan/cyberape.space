@@ -1,0 +1,8 @@
+peru
+markdown<3.6
+typogrify
+babel
+jinja2
+beautifulsoup4
+rtoml
+pelican

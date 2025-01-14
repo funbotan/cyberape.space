@@ -1,0 +1,195 @@
+# Russian translations for PROJECT.
+# Copyright (C) 2018 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2025-01-14 19:30+0100\n"
+"PO-Revision-Date: 2018-04-16 17:58+0300\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ru\n"
+"Language-Team: ru <LL@li.org>\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: templates/archives.html:8 templates/period_archives.html:8
+msgid "Archive for"
+msgstr "Архив"
+
+#: templates/article.html:42 templates/article.html:51 templates/index.html:36
+msgid "Read time:"
+msgstr "Время чтения:"
+
+#: templates/article.html:74 templates/base.html:101
+msgid "Return to blog index"
+msgstr "Вернуться на главную"
+
+#: templates/article.html:74 templates/base.html:101
+msgid "Back"
+msgstr "Назад"
+
+#: templates/author.html:6 templates/categories.html:7
+#: templates/category.html:8 templates/tag.html:8 templates/tags.html:7
+msgid "Home"
+msgstr "Блог"
+
+#: templates/author.html:7
+msgid "Authors"
+msgstr "Авторы"
+
+#: templates/base.html:106
+msgid "Blog"
+msgstr ""
+
+#: templates/base.html:108
+msgid "Books"
+msgstr ""
+
+#: templates/base.html:112
+msgid "The Chimpanzee Effect"
+msgstr ""
+
+#: templates/base.html:115 templates/translations.html:3
+msgid "Translations"
+msgstr "Переводы"
+
+#: templates/base.html:121
+msgid "Literary blog about philosophy, futurism and science fiction"
+msgstr ""
+
+#: templates/base.html:124
+msgid "Please keep in mind that I learned English as a foreign language"
+msgstr ""
+
+#: templates/categories.html:8 templates/category.html:9
+msgid "Categories"
+msgstr "Категории"
+
+#: templates/tag.html:9 templates/tags.html:8
+msgid "Tags"
+msgstr "Теги"
+
+#~ msgid "Moral realism"
+#~ msgstr "Моральный реализм"
+
+#~ msgid "Blog"
+#~ msgstr "Блог"
+
+#~ msgid "Projects"
+#~ msgstr "Проекты"
+
+#~ msgid "The Chimpanzee Effect"
+#~ msgstr "Эффект шимпанзе"
+
+#~ msgid "Solutions"
+#~ msgstr "Решения"
+
+#~ msgid "The Fermi paradox"
+#~ msgstr "Парадокс Ферми"
+
+#~ msgid "Translations"
+#~ msgstr "Переводы"
+
+#~ msgid "Motto"
+#~ msgstr "Скажи мне, как ты отличаешь правду от лжи, и я скажу, кто ты."
+
+#~ msgid "powered by"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Please keep in mind that I've "
+#~ "learned English as a second language "
+#~ "when evaluating text quality"
+#~ msgstr ""
+
+#~ msgid "Return to blog index"
+#~ msgstr "Вернуться на главную"
+
+#~ msgid "Back"
+#~ msgstr "Назад"
+
+#~ msgid "Subscribe"
+#~ msgstr "Подписаться"
+
+#~ msgid "What is this?"
+#~ msgstr "Что это?"
+
+#~ msgid "Contact"
+#~ msgstr "Контакты"
+
+#~ msgid "Report a problem"
+#~ msgstr "Сообщить о проблеме"
+
+#~ msgid "Science"
+#~ msgstr "Наука"
+
+#~ msgid "The Black Attractor"
+#~ msgstr "Черный аттрактор"
+
+#~ msgid "Books"
+#~ msgstr "Книги"
+
+#~ msgid "YouTube"
+#~ msgstr ""
+
+#~ msgid "Literary blog about philosophy, futurism and science fiction"
+#~ msgstr ""
+#~ "Блог о том, как предсказывать будущее"
+#~ " с помощью науки и писать об "
+#~ "этом научную фантастику"
+
+#~ msgid "More details..."
+#~ msgstr "Подробнее..."
+
+#~ msgid "Please keep in mind that I've learned English as a second language"
+#~ msgstr ""
+
+#~ msgid "Predicting the future with science and writing fiction about it"
+#~ msgstr ""
+#~ "Блог о том, как предсказывать будущее"
+#~ " с помощью науки и писать об "
+#~ "этом научную фантастику"
+
+#~ msgid "Archive for"
+#~ msgstr "Архив для"
+
+#~ msgid "Read time:"
+#~ msgstr "Время чтения:"
+
+#~ msgid "Home"
+#~ msgstr "Главная"
+
+#~ msgid "Authors"
+#~ msgstr "Авторы"
+
+#~ msgid "Concepts"
+#~ msgstr "Концепции"
+
+#~ msgid "Developer's bias"
+#~ msgstr "Систематическая ошибка разработчика"
+
+#~ msgid "Marginal scale"
+#~ msgstr "Предельный масштаб"
+
+#~ msgid "The Manhattan dilemma"
+#~ msgstr "Манхеттенская дилемма"
+
+#~ msgid "Mandela's paradox"
+#~ msgstr "Парадокс Манделы"
+
+#~ msgid "Categories"
+#~ msgstr "Темы"
+
+#~ msgid "Tags"
+#~ msgstr "Теги"
+
+#~ msgid "Please keep in mind that I learned English as a foreign language"
+#~ msgstr ""
+

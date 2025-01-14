@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+{% block navclass %}active{%endblock%}
+{% block content %}
+<style type="text/css">
+  #mainpage { background-color: #428bca; }
+</style>
+    <section id="content" class="content">
+      {% block content_title %}
+      {% endblock %}
+      <!-- {% for article in articles_page.object_list %}
+      <div class="row">
+        <div class="col-sm-3">
+          <span class="text-muted">{{article.locale_date}}</span>
+        </div>
+        <div class="col-sm-9">
+          <p>
+            <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">{{ article.title|striptags }}</a> ({{ article.ert }})
+            <br/>
+            {{ article.summary|striptags }}
+          </p>
+        </div>
+      </div>
+      {% endfor %}
+      {% include 'pagination.html' %} -->
+      <div class="wrap">
+        {% for article in articles_page.object_list %}
+        <a href="{{ SITEURL }}/{{ article.url }}" class="implicit">
+          <object>
+          <div class="box" style="background-color: black; background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url({{ article.cover }});">
+            <!-- <a href="{{ SITEURL }}/{{ article.category.url }}" class="category" style="{{ category_colors[article.category|string] | default('') }}">{{ category_icons[article.category|string] | default("") }} {{ article.category }}</a> -->
+            <span class="centered">
+            <h2>{{ article.title }}</h2>
+            <p class="cover-title" style="color:#fff;">{{ article.summary }}</p>
+            {% import 'translations.html' as translations with context %}
+            {{ translations.translations_for(article) }}
+            <p class="cover-title" style="color:#fff;">{{ gettext('Read time:') }} {{ article.ert }}</p>
+            </span>
+          </div>
+          </object>
+        </a>
+        {% endfor %}
+        {% include 'pagination.html' %}
+      </div>
+    </section>
+    <!-- content -->
+{% endblock content %}

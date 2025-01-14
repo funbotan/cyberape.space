@@ -1,0 +1,19 @@
+name: Deploy via Pelican on GitHub pages
+
+on:
+  push:
+    branches:
+      - master
+  schedule:
+    - cron:  '0 0 * * *'
+
+jobs:
+  pelican:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - uses: ./.github/actions/gh-pages-pelican-action
+      env:
+        GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+        SOURCE_FOLDER: .
+        PELICAN_CONFIG_FILE: publishconf.py

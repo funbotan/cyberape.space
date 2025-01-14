@@ -1,0 +1,191 @@
+# English translations for PROJECT.
+# Copyright (C) 2018 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2025-01-14 19:30+0100\n"
+"PO-Revision-Date: 2018-04-16 17:58+0300\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: en\n"
+"Language-Team: en <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: templates/archives.html:8 templates/period_archives.html:8
+msgid "Archive for"
+msgstr ""
+
+#: templates/article.html:42 templates/article.html:51 templates/index.html:36
+msgid "Read time:"
+msgstr ""
+
+#: templates/article.html:74 templates/base.html:101
+msgid "Return to blog index"
+msgstr ""
+
+#: templates/article.html:74 templates/base.html:101
+msgid "Back"
+msgstr ""
+
+#: templates/author.html:6 templates/categories.html:7
+#: templates/category.html:8 templates/tag.html:8 templates/tags.html:7
+msgid "Home"
+msgstr ""
+
+#: templates/author.html:7
+msgid "Authors"
+msgstr ""
+
+#: templates/base.html:106
+msgid "Blog"
+msgstr ""
+
+#: templates/base.html:108
+msgid "Books"
+msgstr ""
+
+#: templates/base.html:112
+msgid "The Chimpanzee Effect"
+msgstr ""
+
+#: templates/base.html:115 templates/translations.html:3
+msgid "Translations"
+msgstr ""
+
+#: templates/base.html:121
+msgid "Literary blog about philosophy, futurism and science fiction"
+msgstr ""
+
+#: templates/base.html:124
+msgid "Please keep in mind that I learned English as a foreign language"
+msgstr ""
+
+#: templates/categories.html:8 templates/category.html:9
+msgid "Categories"
+msgstr ""
+
+#: templates/tag.html:9 templates/tags.html:8
+msgid "Tags"
+msgstr ""
+
+#~ msgid "Moral realism"
+#~ msgstr "Moral realism"
+
+#~ msgid "Blog"
+#~ msgstr ""
+
+#~ msgid "Projects"
+#~ msgstr ""
+
+#~ msgid "The Chimpanzee Effect"
+#~ msgstr ""
+
+#~ msgid "Ashes of Liberty"
+#~ msgstr ""
+
+#~ msgid "Solutions"
+#~ msgstr ""
+
+#~ msgid "The Fermi paradox"
+#~ msgstr ""
+
+#~ msgid "Translations"
+#~ msgstr ""
+
+#~ msgid "Motto"
+#~ msgstr "Tell me how you tell truth from lie, and I will tell you who you are."
+
+#~ msgid "powered by"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Please keep in mind that I've "
+#~ "learned English as a second language "
+#~ "when evaluating text quality"
+#~ msgstr ""
+
+#~ msgid "Return to blog index"
+#~ msgstr ""
+
+#~ msgid "Back"
+#~ msgstr ""
+
+#~ msgid "Subscribe"
+#~ msgstr ""
+
+#~ msgid "What is this?"
+#~ msgstr ""
+
+#~ msgid "Contact"
+#~ msgstr ""
+
+#~ msgid "Report a problem"
+#~ msgstr ""
+
+#~ msgid "Science"
+#~ msgstr ""
+
+#~ msgid "The Black Attractor"
+#~ msgstr ""
+
+#~ msgid "Books"
+#~ msgstr ""
+
+#~ msgid "YouTube"
+#~ msgstr ""
+
+#~ msgid "Literary blog about philosophy, futurism and science fiction"
+#~ msgstr ""
+
+#~ msgid "More details..."
+#~ msgstr ""
+
+#~ msgid "Please keep in mind that I've learned English as a second language"
+#~ msgstr ""
+
+#~ msgid "Predicting the future with science and writing fiction about it"
+#~ msgstr ""
+
+#~ msgid "Archive for"
+#~ msgstr "Archive for"
+
+#~ msgid "Read time:"
+#~ msgstr "Read time:"
+
+#~ msgid "Home"
+#~ msgstr "Home"
+
+#~ msgid "Authors"
+#~ msgstr "Authors"
+
+#~ msgid "Concepts"
+#~ msgstr ""
+
+#~ msgid "Developer's bias"
+#~ msgstr ""
+
+#~ msgid "Marginal scale"
+#~ msgstr ""
+
+#~ msgid "The Manhattan dilemma"
+#~ msgstr ""
+
+#~ msgid "Mandela's paradox"
+#~ msgstr ""
+
+#~ msgid "Categories"
+#~ msgstr "Categories"
+
+#~ msgid "Tags"
+#~ msgstr "Tags"
+
+#~ msgid "Please keep in mind that I learned English as a foreign language"
+#~ msgstr ""
+

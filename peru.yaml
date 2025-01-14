@@ -1,0 +1,17 @@
+imports:
+    plugins|i18n_subsites: plugins/
+    plugins|extract_toc: plugins/
+    pelican-ert: plugins/pelican-ert/
+
+
+git module plugins:
+    url: https://github.com/getpelican/pelican-plugins.git
+
+rule i18n_subsites:
+    pick: i18n_subsites
+
+rule extract_toc:
+    pick: extract_toc
+
+git module pelican-ert:
+    url: https://github.com/nogaems/pelican-ert.git

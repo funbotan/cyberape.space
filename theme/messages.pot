@@ -1,0 +1,76 @@
+# Translations template for PROJECT.
+# Copyright (C) 2025 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2025-01-14 19:30+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: templates/archives.html:8 templates/period_archives.html:8
+msgid "Archive for"
+msgstr ""
+
+#: templates/article.html:42 templates/article.html:51 templates/index.html:36
+msgid "Read time:"
+msgstr ""
+
+#: templates/article.html:74 templates/base.html:101
+msgid "Return to blog index"
+msgstr ""
+
+#: templates/article.html:74 templates/base.html:101
+msgid "Back"
+msgstr ""
+
+#: templates/author.html:6 templates/categories.html:7
+#: templates/category.html:8 templates/tag.html:8 templates/tags.html:7
+msgid "Home"
+msgstr ""
+
+#: templates/author.html:7
+msgid "Authors"
+msgstr ""
+
+#: templates/base.html:106
+msgid "Blog"
+msgstr ""
+
+#: templates/base.html:108
+msgid "Books"
+msgstr ""
+
+#: templates/base.html:112
+msgid "The Chimpanzee Effect"
+msgstr ""
+
+#: templates/base.html:115 templates/translations.html:3
+msgid "Translations"
+msgstr ""
+
+#: templates/base.html:121
+msgid "Literary blog about philosophy, futurism and science fiction"
+msgstr ""
+
+#: templates/base.html:124
+msgid "Please keep in mind that I learned English as a foreign language"
+msgstr ""
+
+#: templates/categories.html:8 templates/category.html:9
+msgid "Categories"
+msgstr ""
+
+#: templates/tag.html:9 templates/tags.html:8
+msgid "Tags"
+msgstr ""
+
