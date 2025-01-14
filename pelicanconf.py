@@ -8,7 +8,7 @@ SITEURL = 'https://cyberape.space'
 
 PATH = 'content'
 THEME = 'theme'
-STATIC_PATHS = ['content/posts', 'content/pages']
+STATIC_PATHS = ['content/posts', 'content/pages', 'CNAME']
 STATIC_EXCLUDES = ['plugins', 'theme', 'output']
 PAGE_EXCLUDES = STATIC_EXCLUDES
 ARTICLE_EXCLUDES = STATIC_EXCLUDES
