@@ -1,4 +1,4 @@
-FROM ubuntu:24.04
+FROM ubuntu:20.04
 
 RUN ln -fs /usr/share/zoneinfo/Europe/Berlin /etc/localtime
 ENV DEBIAN_FRONTEND=noninteractive
