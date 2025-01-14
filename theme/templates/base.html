@@ -1,8 +1,4 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
   <head>
     {% block head %}
     <title>{% block title %}{{ SITENAME }}{% endblock %}</title>
@@ -45,87 +41,10 @@
     {% endblock head %}
   </head>
 
-  {% set category_icons = {
-    'Пост': '📝',
-    'Post': '📝',
-    'Праздничный пост': '🍻',
-    'Понятие': '<i class="fas fa-puzzle-piece"></i>',
-    'Видео': '<i class="fab fa-youtube-square"></i>',
-    'Инфографика': '📈',
-    'Презентация': '📰',
-    'Курсач': '<i class="fas fa-graduation-cap"></i>',
-    'Обзор': '⚖',
-    'Люди': 'Ψ',
-    'People': 'Ψ',
-    'Добро и зло': '☮',
-    'Good and evil': '☮',
-    'Вселенная': '⚛',
-    'Universe': '⚛',
-    'Будущее': '<i class="fas fa-space-shuttle"></i>',
-    'Futurism': '<i class="fas fa-space-shuttle"></i>',
-    'Просто о сложном': '<i class="fas fa-file-archive"></i>',
-    'Decomplication': '<i class="fas fa-file-archive"></i>',
-    'Философия': '☯',
-    'Philosophy': '☯',
-    'Искусство': '📖',
-    'Art': '📖',
-  } %}
-  {% set category_colors = {
-    'Пост': 'color: white; background-color: green;',
-    'Праздничный пост': 'color: white; background-color: Chocolate;',
-    'Понятие': 'color: white; background-color: black;',
-    'Post': 'color: white; background-color: green;',
-    'Видео': 'color: white; background-color: red;',
-    'Инфографика': 'color: white; background-color: #428bca;',
-    'Презентация': 'color: black; background-color: AntiqueWhite;',
-    'Курсач': 'color: white; background-color: Indigo;',
-    'Обзор': 'color: black; background-color: AntiqueWhite;',
-    'Люди': 'color: black; background-color: AntiqueWhite;',
-    'People': 'color: black; background-color: AntiqueWhite;',
-    'Добро и зло': 'color: white; background-color: green;',
-    'Good and evil': 'color: white; background-color: green;',
-    'Вселенная': 'color: white; background-color: black;',
-    'Universe': 'color: white; background-color: black;',
-    'Будущее': 'color: white; background-color: #428bca;',
-    'Futurism': 'color: white; background-color: #428bca;',
-    'Просто о сложном': 'color: white; background-color: Indigo;',
-    'Decomplication': 'color: white; background-color: Indigo;',
-    'Философия': 'color: white; background-color: Chocolate;',
-    'Philosophy': 'color: white; background-color: Chocolate;',
-    'Искусство': 'color: white; background-color: brown;',
-    'Art': 'color: white; background-color: brown;',
-  } %}
-
   <body id="index" class="archive">
     {% if page_name != 'index' %}
       <a href="{{ SITEURL }}" class="sticky-button" title="{{ gettext('Return to blog index') }}">⮜ {{ gettext('Back') }}</a>
     {% endif %}
-<!--    <nav class="navbar navbar-default" role="navigation">-->
-<!--      <div class="container">-->
-<!--        <div class="topnav" id="myTopnav">-->
-<!--          <a href="{{ SITEURL }}" id="mainpage" class="nav">🏠 {{ gettext('Blog') }}</a>-->
-<!--          <div class="dropdown">-->
-<!--            <button class="dropbtn" id="projects">📚 {{ gettext('Books') }} -->
-<!--              <i class="fa fa-caret-down"></i>-->
-<!--            </button>-->
-<!--            <div class="dropdown-content">-->
-<!--              <a href="{{ SITEURL }}/ce.html">{{ gettext('The Chimpanzee Effect') }}</a>-->
-<!--            </div>-->
-<!--          </div>-->
-<!--          <a href="{{ SITEURL }}/translations.html" id="translations" class="nav"><i class="fas fa-language"></i> {{ gettext('Translations') }}</a>-->
-<!--          <a href="http://www.youtube.com/c/FunBotan" target="_blank" class="fab fa-youtube"></a>-->
-<!--          <a href="https://twitter.com/CyberApeStories" target="_blank" class="fab fa-twitter"></a>-->
-<!--          <a href="https://t.me/cyberape" target="_blank" class="fab fa-telegram-plane"></a>-->
-<!--        </div>-->
-<!--        <div class="motto">-->
-<!--          {{ gettext('Literary blog about philosophy, futurism and science fiction') }}.</a>-->
-<!--          <br />-->
-<!--          {% if DEFAULT_LANG != main_lang %}-->
-<!--          {{ gettext('Please keep in mind that I learned English as a foreign language') }}-->
-<!--          {% endif %}-->
-<!--        </div>-->
-<!--      </div>-->
-<!--    </nav>-->
     {% block content %}
     {% endblock %}
     <script type="text/javascript" src="/theme/slideshow.js"></script>

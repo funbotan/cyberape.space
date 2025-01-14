@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
-# from mdx_emdash import EmDashExtension
 
 AUTHOR = 'FunBotan'
 SITENAME = 'Cyber Ape stories'
@@ -23,13 +22,6 @@ DEFAULT_LANG = 'ru'
 
 PLUGIN_PATHS = ['plugins']
 PLUGINS = ['i18n_subsites', 'pelican-ert', 'render_math']
-'''
-MARKDOWN = {
-    'extension_configs': {
-        EmDashExtension(): {},
-    }
-}
-'''
 
 ERT_WPM = 200
 ERT_FORMAT = '{time}'
@@ -58,16 +50,6 @@ CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
-
-# Blogroll
-LINKS = (('Pelican', 'http://getpelican.com/'),
-         ('Python.org', 'http://python.org/'),
-         ('Jinja2', 'http://jinja.pocoo.org/'),
-         ('You can modify those links in your config file', '#'),)
-
-# Social widget
-SOCIAL = (('You can add links in your config file', '#'),
-          ('Another social link', '#'),)
 
 DEFAULT_PAGINATION = False
 
