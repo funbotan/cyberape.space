@@ -7,6 +7,7 @@ SITENAME = 'Cyber Ape stories'
 SITEURL = 'https://cyberape.space'
 
 PATH = 'content'
+THEME = 'theme'
 STATIC_PATHS = ['content/posts', 'content/pages']
 STATIC_EXCLUDES = ['plugins', 'theme', 'output']
 PAGE_EXCLUDES = STATIC_EXCLUDES
