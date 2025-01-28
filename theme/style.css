@@ -1,0 +1,450 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Serif:400,400i,700&subset=cyrillic');
+
+@media (max-width: 776px) {
+  .text-right {
+    text-align: left;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  font-family: Arial, Verdana, Tahoma, sans-serif, Garamond, serif;
+}
+
+.summary {
+  display: inline;
+}
+
+/* Custom page footer */
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 80px;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  color: #fff;
+  background-color: #000;
+}
+
+.footer-text {
+  margin: 10px 0;  
+}
+
+/* Customize container */
+@media (min-width: 768px) {
+  .container {
+    max-width: 740px;
+  }
+}
+
+.entry-content {
+  padding: 15px 0;
+  line-height: 1.5em;
+  text-align: justify;
+  font-size: 19px;
+  font-family: 'PT Serif', serif;
+  word-break: break-word;
+  word-wrap: break-word;
+}
+
+img + em {
+  font-size: 18px;
+  color: #555;
+  margin: 0 20%;
+}
+
+pre {
+  font-size: 19px !important;
+}
+
+b, strong {
+  -webkit-font-smoothing: antialiased;
+}
+
+.comment {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  max-width: 80%;
+}
+
+#png {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  max-width: 100%;
+}
+
+blockquote {
+  background: #f9f9f9;
+  border-left: 10px solid #ccc;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+  font-style: inherit;
+  line-height: inherit;
+  font-size: inherit;
+  font-style: italic;
+}
+
+blockquote:before {
+  color: #ccc;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+
+.motto {
+  color: #DDD;
+  font-size: 17px;
+  text-align: center;
+  margin-top: 1em;
+}
+
+.motto a {
+  color: #5cb3ff;
+}
+
+div.background-image {
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: auto;
+  position: relative;
+  overflow-x: hidden;
+  margin: 20px 0 20px 0;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 20%;
+  padding-bottom: 20%;
+  text-align: center;
+  border-radius: 20px;
+  color: #fff;
+}
+
+.wrap {
+  overflow: hidden;
+  margin: 0px;
+  width: 100%;
+}
+
+span.centered {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
+  padding-right: 15%;
+  padding-left: 15%;
+}
+
+div.box {
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  float: left;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  color: #fff;
+  vertical-align: middle;
+  height: 300px;
+  line-height: 300px;
+  border: solid 2px white;
+  transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out; /* Firefox 4 */
+  -webkit-transition: all .3s ease-in-out; /* Safari and Chrome */
+  -o-transition: all .3s ease-in-out; /* Opera */
+  -ms-transition: all .3s ease-in-out; /* Explorer 10 */
+}
+
+a.implicit:hover .box, a.implicit:focus .box {
+  border-color: #428bca;
+  opacity: 0.8;
+}
+
+@media only screen and (max-width : 600px) {
+  /* Smartphone view: 1 tile */
+  .box {
+     width: 100%;
+  }
+}
+@media only screen and (max-width : 1500px) and (min-width : 600px) {
+  /* Tablet view: 2 tiles */
+  .box {
+     width: 50%;
+  }
+}
+@media only screen and (min-width : 1500px) {
+  /* Small desktop / ipad view: 3 tiles */
+  .box {
+     width: 33.3%;
+  }
+}
+
+a.implicit {
+  text-decoration: none;
+}
+
+a.category {
+  position: absolute;
+  text-decoration: none;
+  padding: 8px;
+  line-height: 1em;
+  font-size: 16px;
+  border-radius: 4px;
+  z-index: 10;
+  left: 15px;
+  top: 15px;
+}
+
+a.category:hover, a.category:focus {
+  text-decoration: none;
+  border: solid 2px #428bca;
+  left: 13px;
+  top: 13px;
+}
+
+.cover-title {
+  color: #fff;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 80%;
+}
+
+@font-face {
+  font-family: telescope;
+  src: url(seguisym.subset.ttf);
+}
+
+.navbar {
+  min-height: 150px;
+  background-color: #000;
+  background-image: url(barlogo.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right top;
+  border: none;
+  font-family: Arial, telescope;
+}
+
+.navbar-default .navbar-brand .navbar-nav>li>a {
+  color: #FFF;
+}
+
+.sticky-button {
+  position: fixed; /* Fixed/sticky position */
+  top: 20px; /* Place the button at the bottom of the page */
+  left: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: #428bca; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+.sticky-button:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
+
+table {  
+  color: #333;
+  font-family: Helvetica, Arial, sans-serif;
+  width: 640px; 
+  border-collapse: collapse; 
+  border-spacing: 0;
+  margin-left:auto; 
+  margin-right:auto;
+}
+
+td, th {  
+  border: 1px solid transparent; /* No more visible border */
+  height: 30px; 
+  transition: all 0.3s;  /* Simple transition for hover effect */
+}
+
+th {  
+  background: #DFDFDF;  /* Darken header a bit */
+  font-weight: bold;
+  text-align: center;
+}
+
+td {  
+  background: #FAFAFA;
+  text-align: center;
+}
+
+/* Cells in even rows (2,4,6...) are one color */        
+tr:nth-child(even) td { background: #F1F1F1; }   
+
+/* Cells in odd rows (1,3,5...) are another (excludes header cells)  */        
+tr:nth-child(odd) td { background: #FEFEFE; }  
+tr td:hover { background: #666; color: #FFF; }  
+
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.nav {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 12px;
+  text-decoration: none;
+  font-size: 17px;
+  z-index: 100;
+}
+
+.topnav a {
+  text-decoration: none;
+}
+
+/* Dropdown container - needed to position the dropdown content */
+.dropdown {
+  float: left;
+  overflow: hidden;
+  position: static;
+}
+
+/* Style the dropdown button to fit inside the topnav */
+.dropdown .dropbtn {
+  font-size: 17px; 
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 12px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+/* Style the dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 100;
+}
+
+/* Style the links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a dark background on topnav links and the dropdown button on hover */
+.topnav a:hover, .dropdown:hover .dropbtn {
+  background-color: #555;
+  color: white;
+}
+
+/* Add a grey background to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Show the dropdown menu when the user moves the mouse over the dropdown button */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.fa-vk {
+  background: #3B5998;
+  color: white;
+  font-size: 23px;
+  float: right;
+  display: block;
+  padding: 15px 13px;
+  margin: 0;
+  text-decoration: none;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+  font-size: 23px;
+  float: right;
+  display: block;
+  padding: 15px 13px;
+  margin: 0;
+  text-decoration: none;
+}
+
+.fa-telegram-plane {
+  background: #55ACEE;
+  color: white;
+  font-size: 23px;
+  float: right;
+  display: block;
+  padding: 15px 13px;
+  margin: 0;
+  text-decoration: none;
+}
+
+.fa-youtube {
+  background: #BB0000;
+  color: white;
+  font-size: 23px;
+  float: right;
+  display: block;
+  padding: 15px 13px;
+  margin: 0;
+  text-decoration: none;
+}
+
+.fa-yandex {
+  background: white;
+  color: #CC0000;
+  font-size: 23px;
+  float: right;
+  display: block;
+  padding: 15px 13px;
+  margin: 0;
+  text-decoration: none;
+}
+
+iframe {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+ol {
+  margin-block-end: 1em;
+}
