@@ -41,9 +41,6 @@
   </head>
 
   <body id="index" class="archive">
-    {% if page_name != 'index' %}
-      <a href="{{ SITEURL }}" class="sticky-button" title="{{ gettext('Return to blog index') }}">⮜ {{ gettext('Back') }}</a>
-    {% endif %}
     {% block content %}
     {% endblock %}
     <footer class="footer">
