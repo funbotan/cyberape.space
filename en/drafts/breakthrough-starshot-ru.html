@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+  <head>
+    <title>RIP Стивен Хокинг - Cyber Ape stories</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">  
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="/theme/style.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/png" href="/theme/favicon.png"/>
+    <link href="http://rss.cyberape.space/atom" type="application/atom+xml" rel="alternate" title="Cyber Ape stories Atom Feed" />
+    <link href="http://rss.cyberape.space/rss" type="application/rss+xml" rel="alternate" title="Cyber Ape stories RSS Feed" />
+<meta property="og:title" content="RIP Стивен Хокинг" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://cyberape.space/en/drafts/breakthrough-starshot-ru.html" />
+<meta itemprop="url" content="https://cyberape.space/en/drafts/breakthrough-starshot-ru.html" /> 
+<meta property="og:description" content="Думал, что можно написать в честь Хокинга, и вспомнил, что у меня есть честно проработанный и совсем не скопипащенный курсач, основной целью которого было подтвердить, что даже в самых безумных заявлениях он не ошибался. Боящимся математики не открывать." />
+<meta name="description" content="Думал, что можно написать в честь Хокинга, и вспомнил, что у меня есть честно проработанный и совсем не скопипащенный курсач, основной целью которого было подтвердить, что даже в самых безумных заявлениях он не ошибался. Боящимся математики не открывать." />
+ 
+<meta property="og:article:published_time" content="2018-03-14" /> 
+ 
+<meta property="og:article:tag" content="математика"> 
+<meta property="og:article:tag" content="космология"> 
+<meta property="og:article:tag" content="футуризм"> 
+ 
+<meta property="og:image" content="https://cyberape.space/en/content/posts/breakthrough-starshot/cover.jpg" />
+<meta itemprop="image" content="https://cyberape.space/en/content/posts/breakthrough-starshot/cover.jpg" /> 
+<meta name="twitter:site" content="@funbotan" />
+ 
+  </head>
+
+  <body id="index" class="archive">
+<style type="text/css">
+  #mainpage {
+    background-color: #428bca;
+  }
+</style>
+<div class="container">
+  <section id="content" class="article content">
+    <!-- @html-ignore -->
+    <div class="background-image" style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/content/posts/breakthrough-starshot/cover.jpg);">
+      <h1 class="cover-title">
+        RIP Стивен Хокинг
+      </h1>
+ 
+      <div class="text-muted">Wed 14 March 2018</div>
+      <p class="cover-title" style="color:#fff;">Read time: 4 min</p>
+    </div>
+    <!-- .entry-content -->
+    <div class="entry-content">
+      <h1>Введение</h1>
+<p>12 апреля 2016 года знаменитый британский физик Стивен Хокинг и российский бизнесмен Юрий Мильнер объявили о выделении $100 млн на финансирование проекта Breakthrough Starshot. Целью проекта стала разработка технологий для создания космических аппаратов, способных совершить межзвездный полет к Альфе Центавра.</p>
+<p>Основой проекта Breakthrough Starshot стала статья профессора физики Калифорнийского университета в Санта-Барбаре Филиппа Любина «План для межзвездных полетов» (<a href="https://www.nasa.gov/sites/default/files/atoms/files/roadmap_to_interstellar_flight_tagged.pdf" target="_blank">A Roadmap to Interstellar Flight</a>). Основная заявленная цель проекта состоит в том, чтобы сделать межзвездные полеты возможными уже при жизни следующего поколения людей, то есть не через столетия, а через десятилетия.</p>
+<p>Межзвездный зонд будет представлять собой космический парусник с электронным модулем StarChip массой 1 г, соединенным сверхпрочными стропами с солнечным парусом площадью 16 м^2, толщиной 100 нм и массой 1 г. Конечно, света нашего Солнца недостаточно, чтобы разогнать даже столь легкую конструкцию до скоростей, при которых межзвездные путешествия не будут длиться тысячелетиями. Поэтому главная идея проекта StarShot — это разгон с помощью мощного лазерного излучения, которое фокусируется на парусе. По расчетам разработчиков, полет к Альфе Центавра продлится около 20 лет.</p>
+<p>Цель данной работы — моделирование описанной системы и оценка достижимости фантастического заявленного срока в 20 лет.</p>
+<h1>Описание модели</h1>
+<h2>Постановка задачи</h2>
+<p>Космический зонд состоит из полезной нагрузки и фотонного паруса с фиксированными размерами и массой. Для его разгона используется фазированная решетка лазеров, имеющих фиксированную мощность и длину волны, сфокусированных на оптической бесконечности.</p>
+<h2>Упрощающие предположения</h2>
+<ul>
+<li>Влияние атмосферы Земли на луч лазера не учитываются. В реальности выполнения этого условия можно добиться, расположив лазер не на Земле, а на ее орбите или на Луне.</li>
+<li>Дифракционное рассеивание лазера описывается моделью Гауссового луча.</li>
+<li>Фотонный парус зонда является идеальным отражателем.</li>
+<li>Система прицеливания лазера идеальна: он все время направлен на центр паруса зонда перпендикулярно ему (т.е. движение небесного тела, на котором расположен лазер, также не учитывается).</li>
+</ul>
+<h2>Выбор переменных и констант</h2>
+<p>Заявленные параметры системы (в данной работе не оценивается их практическая достижимость):</p>
+<p><em>W = 10^11 Вт</em> — суммарная мощность лазера<br>
+<em>σ = 6.2E-5</em> — поверхностная плотность паруса<br>
+<em>S = 16 м^2</em> — площадь паруса<br>
+<em>m0 = 1 г</em> — масса полезной нагрузки</p>
+<p>Параметры, значения которых предполагаются из общефизических соображений:</p>
+<p><em>A = 1 км</em> — апертура лазера. Такое значение невообразимо для лазера классической конструкции, но вполне достижимо для фазированной решетки.<br>
+<em>λ = 0.5 μм</em> — длина волны лазера, выбрана на нижней границе полосы пропускания атмосферы Земли.<br>
+<em>T_end</em> — время работы лазера, является параметром модели.  </p>
+<p>Общеизвестные константы: скорость света c и расстояние от Альфы Центавра D.</p>
+<p>Внутренние переменные:</p>
+<p><em>l(t)</em> — расстояние между лазером и зондом в момент времени t, м<br>
+<em>p(t)</em> — импульс зонда относительно лазера в момент времени t, кг⋅м/с<br>
+<em>M = m0 + σS</em> — полная масса зонда, кг<br>
+<em>θ</em> — угол дифракционного расхождения луча, рад.<br>
+<em>B(l,θ)</em> — площадь, по которой распределяется энергия лазера на расстоянии l от источника, м^2</p>
+<p>В качестве выходного значения мы хотим получить время полета до Альфы Центавра.</p>
+<h1>Теоретическая часть</h1>
+<p>Поскольку заявленная максимальная скорость зонда составляет около 20% от скорости света, для описания его движения необходимо использовать релятивистскую механику. Составим уравнение для <em>p(t)</em>:</p>
+<p><img alt="" src="https://cyberape.space/en/content/posts/breakthrough-starshot/f1.png"></p>
+<p>В правой части первый множитель — максимальная сила давления излучения, второй — доля энергии лазера, которая попадает на парус зонда, третий — поправка на эффект Доплера. В уравнении присутствуют две переменные: <em>v</em> и <em>l</em>. Первая однозначно выражается через <em>p(t)</em>, но вторая является независимой и требует дополнительного уравнения. Из релятивистской зависимости между скоростью и импульсом получаем:</p>
+<p><img alt="" src="https://cyberape.space/en/content/posts/breakthrough-starshot/f2.png"></p>
+<p><em>B(l,θ)</em> — площадь основания усеченного конуса с углом наклона сторон <em>θ</em> и высотой <em>l</em>. Она легко выражается геометрически:</p>
+<p><img alt="" src="https://cyberape.space/en/content/posts/breakthrough-starshot/f3.png"></p>
+<p>При больших значениях <em>l</em> можно отбросить линейную часть функции:</p>
+<p><img alt="" src="https://cyberape.space/en/content/posts/breakthrough-starshot/f4.png"></p>
+<p>Угол дифракционного расхождения в модели Гауссового луча — константа, равная</p>
+<p><img alt="" src="https://cyberape.space/en/content/posts/breakthrough-starshot/f5.png"></p>
+<p>Объединив все это, получаем систему ОДУ с двумя неизвестными:</p>
+<p><img alt="" src="https://cyberape.space/en/content/posts/breakthrough-starshot/f6.png"></p>
+<p>Зная импульс (и, следовательно, скорость) зонда в момент выключения лазера, легко найти время в пути до Альфы Центавра.</p>
+<h1>Практическая часть</h1>
+<p><img alt="" src="https://cyberape.space/en/content/posts/breakthrough-starshot/f7.png"></p>
+<p>По рисунку видно, что большую часть энергии зонд получает, пока находится вблизи Земли — это связано с рассеиванием лазерного луча с расстоянием.</p>
+<p>Функция <em>v(t)</em> не имеет предела в строгом смысле. Однако можно эмпирически показать, что ее значение на физически осмысленном промежутке времени не превышает 33000 км/с, что соответствует 40 годам в пути.</p>
+<h1>Вывод</h1>
+<p>С одной стороны, полученное значение лишь в два раза больше заявленного. Учитывая, что некоторые важные параметры модели были лишь предположениями, можно с уверенностью утверждать, что погрешность решения по абсолютной величине превосходит это различие.  С другой стороны, для получения такого результата пришлось ввести множество упрощающих предположений, многие из которых недостижимы в реальности.</p>
+<p>В любом случае это означает, что заявленный в <em>Breakthrough Starshot</em> порядок величины скорости достижим и не требует принципиально новых технологий.</p>
+<p><img alt="" src="https://cyberape.space/en/content/posts/breakthrough-starshot/1.jpg">
+<img alt="" src="https://cyberape.space/en/content/posts/breakthrough-starshot/2.jpg"></p>
+    </div>
+    <!-- /.entry-content -->
+    <footer class="post-info text-muted">
+      <!--
+      <button type="button" class="btn btn-default">          
+        <a href="https://cyberape.space/en/category/kursach.html"><div class="fa fa-lg fa-folder-open"></div> Курсач</a>
+      </button>
+       <button type="button" class="btn btn-default">
+        <a href="https://cyberape.space/en/tag/matematika.html"><div class="fa fa-lg fa-tag"></div> математика</a>
+      </button>
+      <button type="button" class="btn btn-default">
+        <a href="https://cyberape.space/en/tag/kosmologiia.html"><div class="fa fa-lg fa-tag"></div> космология</a>
+      </button>
+      <button type="button" class="btn btn-default">
+        <a href="https://cyberape.space/en/tag/futurizm.html"><div class="fa fa-lg fa-tag"></div> футуризм</a>
+      </button>
+       -->
+    </footer>
+    <!-- /.post-info -->
+  </section>
+</div>
+<!-- <button onclick="window.open('https://cyberape.space/en','_self')" id="backbutton" title="Return to blog index">◄ Back</button> -->
+    <footer class="footer">
+      <div class="container">
+        <p class="footer-text">
+          <a href="https://cyberape.space">Переключить на русский</a>
+        <br />
+        <a href="https://cyberape.space/en" title="Return to blog index">Cyber Ape stories</a> is licensed under <a href="https://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer">CC BY 4.0</a>, powered by <a href="https://getpelican.com/">pelican</a> and hosted with &hearts; by <a href="https://github.com/">GitHub</a>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
