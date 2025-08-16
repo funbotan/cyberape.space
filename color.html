@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+  <head>
+    <title>Свет и цвет - Cyber Ape stories</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">  
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="/theme/style.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/png" href="/theme/favicon.png"/>
+    <link href="http://rss.cyberape.space/atom" type="application/atom+xml" rel="alternate" title="Cyber Ape stories Atom Feed" />
+    <link href="http://rss.cyberape.space/rss" type="application/rss+xml" rel="alternate" title="Cyber Ape stories RSS Feed" />
+<meta property="og:title" content="Свет и цвет" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://cyberape.space/color.html" />
+<meta itemprop="url" content="https://cyberape.space/color.html" /> 
+<meta property="og:description" content="Задание заключалось в написании очень простого текста для введения в курс." />
+<meta name="description" content="Задание заключалось в написании очень простого текста для введения в курс." />
+ 
+<meta property="og:article:published_time" content="2017-12-17" /> 
+ 
+ 
+<meta property="og:image" content="https://cyberape.space/content/posts/color/cover.jpg" />
+<meta itemprop="image" content="https://cyberape.space/content/posts/color/cover.jpg" /> 
+<meta name="twitter:site" content="@funbotan" />
+ 
+  </head>
+
+  <body id="index" class="archive">
+<style type="text/css">
+  #mainpage {
+    background-color: #428bca;
+  }
+</style>
+<div class="container">
+  <section id="content" class="article content">
+    <!-- @html-ignore -->
+    <div class="background-image" style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/content/posts/color/cover.jpg);">
+      <h1 class="cover-title">
+        Свет и цвет
+      </h1>
+ 
+      <div class="text-muted">Sun 17 December 2017</div>
+      <p class="cover-title" style="color:#fff;">Время чтения: 2 min</p>
+    </div>
+    <!-- .entry-content -->
+    <div class="entry-content">
+      <h2>Восприятие света</h2>
+<p>Видимый для человека свет – лишь малая часть электромагнитного спектра, соответствующая длинам волн 380-780 нм. Для выбора этого диапазона есть весомые причины: во-первых, на него приходится максимум в частотном распределении светимости Солнца; во-вторых, более высокие частоты не пропускаются атмосферой Земли.</p>
+<p>Внутри глаза за непосредственное восприятие света отвечает сетчатка. Она состоит из двух типов фоторецепторов: палочек и колбочек. Палочки более чувствительны, но регистрируют лишь общую интенсивность света и не различают частоты. За цветное зрение отвечают колбочки, которые, в свою очередь, делятся еще на три вида, каждый из которых регистрирует свой частот: красно-желтый, зелено-желтый, и сине-фиолетовый.</p>
+<p><img alt="" src="https://cyberape.space/content/posts/color/eye.png"></p>
+<p>Выбор цветового «базиса» в природе достаточно произволен: например, птицы имеют четыре базовых цвета, где четвертый охватывает высокие частоты, невидимые для нас; конкретно голуби имеют целых пять, а большинство млекопитающих обходятся двумя.</p>
+<p>Очевидно, что наиболее эффективная передача и кодирование цвета будет обеспечиваться выбором того же базиса, который используют человеческие глаза.</p>
+<h2>Формирование изображений</h2>
+<p>Описанную выше модель (впоследствии RGB) впервые предложил Джеймс Максвелл в 1861 году. Сегодня она используется в большинстве приложений, как для ввода, так и для вывода графической информации. Подобно сетчатке, каждый пиксель камеры или монитора состоит из трех независимых субпикселей разного цвета.</p>
+<p><img alt="" src="https://cyberape.space/content/posts/color/pixel.png"></p>
+<p>В определенных случаях применяются и другие модели. Например, RGB плохо подходит для печати на белой бумаге, поскольку подразумевает, что цвет «по умолчанию» - черный. Для этого используется модель CMY.</p>
+<p><img alt="" src="https://cyberape.space/content/posts/color/transform.png"></p>
+<p>Также для редактирования и анализа изображений используется модель YCbCr, а в аналоговом телевидении широко применяется HSL.</p>
+<h2>Кодирование изображений</h2>
+<p>Самый простой способ сохранить изображение – проквантовать аналоговый сигнал с камеры и сохранить значение каждого пикселя отдельно (растровый порядок). В реальности этот метод крайне избыточен и неприемлем для долгосрочного хранения больших объемов данных. Современные алгоритмы сжатия могут уменьшать количество хранимой информации на порядки, практически не ухудшая визуальное качество изображения.</p>
+<p>Существует также векторный формат, принципиально отличный от растрового. В нем линии кодируются как самостоятельные объекты, а не как множества пикселей. Это позволяет осуществлять аффинные преобразования без искажений, и даже увеличивать масштаб изображения без потери качества. К сожалению, преобразовать фотографию в векторный формат практически невозможно, поэтому он используется преимущественно для рисунков, изначально созданных на компьютере. Соответственно, в компьютерном зрении векторный формат не рассматривается.</p>
+    </div>
+    <!-- /.entry-content -->
+    <footer class="post-info text-muted">
+      <!--
+      <button type="button" class="btn btn-default">          
+        <a href="https://cyberape.space/category/kursach.html"><div class="fa fa-lg fa-folder-open"></div> Курсач</a>
+      </button>
+      -->
+    </footer>
+    <!-- /.post-info -->
+  </section>
+</div>
+<!-- <button onclick="window.open('https://cyberape.space','_self')" id="backbutton" title="Вернуться на главную">◄ Назад</button> -->
+    <footer class="footer">
+      <div class="container">
+        <p class="footer-text">
+          <a href="https://cyberape.space/en">Switch to English</a>
+        <br />
+        <a href="https://cyberape.space" title="Вернуться на главную">Cyber Ape stories</a> is licensed under <a href="https://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer">CC BY 4.0</a>, powered by <a href="https://getpelican.com/">pelican</a> and hosted with &hearts; by <a href="https://github.com/">GitHub</a>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
