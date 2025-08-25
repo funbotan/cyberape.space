@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+  <head>
+    <title>Зачем нам фракталы - Cyber Ape stories</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">  
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="/theme/style.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/png" href="/theme/favicon.png"/>
+    <link href="http://rss.cyberape.space/atom" type="application/atom+xml" rel="alternate" title="Cyber Ape stories Atom Feed" />
+    <link href="http://rss.cyberape.space/rss" type="application/rss+xml" rel="alternate" title="Cyber Ape stories RSS Feed" />
+<meta property="og:title" content="Зачем нам фракталы" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://cyberape.space/fractals.html" />
+<meta itemprop="url" content="https://cyberape.space/fractals.html" /> 
+<meta property="og:description" content="Математическое объяснение формы деревьев и много чего еще." />
+<meta name="description" content="Математическое объяснение формы деревьев и много чего еще." />
+ 
+<meta property="og:article:published_time" content="2019-04-04" /> 
+ 
+ 
+<meta property="og:image" content="https://cyberape.space/content/posts/fractals/cover.jpg" />
+<meta itemprop="image" content="https://cyberape.space/content/posts/fractals/cover.jpg" /> 
+<meta name="twitter:site" content="@funbotan" />
+ 
+  </head>
+
+  <body id="index" class="archive">
+<style type="text/css">
+  #mainpage {
+    background-color: #428bca;
+  }
+</style>
+<div class="container">
+  <section id="content" class="article content">
+    <!-- @html-ignore -->
+    <div class="background-image" style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/content/posts/fractals/cover.jpg);">
+      <h1 class="cover-title">
+        Зачем нам фракталы
+      </h1>
+ 
+      <div class="text-muted">Thu 04 April 2019</div>
+      <p class="cover-title" style="color:#fff;">Время чтения: 3 min</p>
+    </div>
+    <!-- .entry-content -->
+    <div class="entry-content">
+      <p>Приведенная ниже задача интересна тем, насколько бесшовно ее кажущаяся хардкорность преобразуется в конкретные закономерности реального мира. Если первая и вторая часть вас напрягают, то лучше начните сразу с третьей. </p>
+<hr>
+<h2>Формулировка задачи</h2>
+<p>Канторово множество $K$ определяется так: делим отрезок $[0,1]$ на три равные части и выбрасываем средний интервал $(\frac{1}{3},\frac{2}{3})$. Оставшиеся два отрезка $[0,\frac{1}{3}]$ и $[\frac{2}{3},1]$ опять делятся на три равные части, и средние интервалы выбрасываются, и т.д. до бесконечности. Оставшееся множество и есть канторово множество. Доказать:<br>
+<strong>А.</strong> $K$ нигде не плотно, т.е., любой интервал $(α,β)⊂[0,1]$ содержит подинтервал $(α_1,β_1)$, свободный от точек $K$,<br>
+<strong>Б.</strong> $K$ несчетно (имеет мощность континуума),<br>
+<strong>В.</strong> $K$ имеет меру 0.</p>
+<h2>Решение</h2>
+<p><strong>А.</strong> Любой подинтервал $[0,1]$ либо полностью принадлежит отброшенной области, либо содержит в себе подинтервал, который на некотором шаге $k$ построения множества $K$ был отрезком. Но тогда часть этого отрезка была отброшена на шаге $k+1$, следовательно, исходный подинтервал содержит подинтервал, свободный от точек $K$.</p>
+<p><strong>Б.</strong> Представим точки отрезка $[0,1]$ в троичной системе счисления: $a∈[0,1]$, $a=0.α_1α_2α_3$ и т.д., где $α_k∈{0,1,2}$. Согласно алгоритму построения Канторова множества, на k-м шаге из $K$ исключаются точки, у которых $α_k=1$. Оставшиеся точки можно сопоставить двоичным разложениям всех точек отрезка $[0,1]$ (с заменой 2 на 1), причем такое отображение является биекцией. Это значит, что мощность множества $K$ равно мощности $[0,1]$, т.е. континууму.</p>
+<p><strong>В.</strong> Вычислим суммарную меру интервалов, которые исключаются при построении канторового множества. На n-м шаге исключается $2^{n-1}$ интервалов длины $\displaystyle\frac{1}{3^n}$. Сложив их все, получим $\displaystyle\sum_{n=1}^{\infty}\displaystyle\frac{2^{n-1}}{3^n}=\displaystyle\frac{1}{2}\sum_{n=1}^{\infty}\Big(\displaystyle\frac{2}{3}\Big)^n=\displaystyle\frac{1}{2}\times2=1$. Вычтя это из длины отрезка $[0,1]$, получим 0 — меру канторового множества.</p>
+<h2>Научно-популярное объяснение</h2>
+<p>Ниже приведена иллюстрация процесса построения канторова множества. Ничего не напоминает?</p>
+<p><img alt="" src="https://cyberape.space/content/posts/fractals/1.png"></p>
+<p>Попробуем согнуть каждую из горизонтальных линий и присоединить ее концы к серединам линий на уровне ниже.</p>
+<p><img alt="" src="https://cyberape.space/content/posts/fractals/2.png"></p>
+<p>Получаем другую знакомую структуру — бинарное дерево. Кстати, почему она так называется?</p>
+<p><img alt="" src="https://cyberape.space/content/posts/fractals/3.jpg"></p>
+<p>Если отрезать у настоящего дерева ветку (пожалуйста, не делайте так на самом деле), она будет напоминать уменьшенное исходное дерево. То же можно сделать и с бинарным деревом. Структуры, обладающие таким свойством, называются фракталами. А канторово множество — простейший одномерный пример фрактала.</p>
+<p><img alt="" src="https://cyberape.space/content/posts/fractals/4.jpg"></p>
+<p>Деревья напоминают фракталы не только ветвями, но и корнями. И вообще, в природе фракталы встречаются повсеместно. Например, наши кровеносная и нервная системы, а также легкие, имеют фрактальную структуру. Аналогично с внешними жабрами и фильтрами различных водных существ. В древних докембрийских морях существовала целая группа полностью фрактальных животных — рангеоморфов. В неживой природе те же свойства имеют снежинки и многие другие кристаллы. И в некоторой степени то же можно сказать о любой человеческой инфраструктуре — дорогах, электрической сети, Интернете.</p>
+<p><img alt="" src="https://cyberape.space/content/posts/fractals/5.jpg"></p>
+<p>Общие свойства столь разных систем объясняются схожестью их назначения. Листья дерева должны одновременно иметь доступ к свету, воздуху и воде, поднимающейся из корней. Корни должны касаться как можно большего количества почвы, чтобы быстрее впитывать из нее воду. Кровеносные сосуды должны доставлять кровь к каждой клетке. Легкие и жабры должны максимизировать поверхность соприкосновения сосудов и воздуха, и так далее.</p>
+<p><img alt="" src="https://cyberape.space/content/posts/fractals/6.jpg"></p>
+<p>Общий принцип уже должен быть понятен. Фрактальная структура возникает там, где требуется максимизировать поверхность (если мы говорим о трехмерной структуре) соприкосновения двух сред. По сути, именно об этом говорит доказанное выше свойство <strong>А</strong>: рядом с любой точкой фрактала найдется точка, не принадлежащая ему. Конечно, в реальном мире эти точки не могут быть бесконечно малыми, но с описанием макроскопических структур модель фрактала справляется.</p>
+<p>Кроме того, по свойству <strong>В</strong> фрактал имеет нулевую меру. В реальном мире это означает, что он минимизирует собственный объем, а значит, и количество ресурсов, затрачиваемое на постройку фрактальных структур. Именно этого мы хотим от инфраструктуры: она должна занимать как можно меньше места, расходовать как можно меньше ресурсов, и при этом соединять как можно больше точек.</p>
+<p>Наконец, интересный факт: если бы можно было расплести все сосуды кровеносной системы человека и выложить их в одну линию, ее длина составила бы до 100000 километров! Для периферийных нервов эта цифра меньше, но все равно существенна: 75 километров. Таким образом проявляется свойство <strong>Б</strong>, насколько ему это позволяют ограничения реального мира.</p>
+<p><img alt="" src="https://cyberape.space/content/posts/fractals/7.jpg"></p>
+    </div>
+    <!-- /.entry-content -->
+    <footer class="post-info text-muted">
+      <!--
+      <button type="button" class="btn btn-default">          
+        <a href="https://cyberape.space/category/kursach.html"><div class="fa fa-lg fa-folder-open"></div> Курсач</a>
+      </button>
+      -->
+    </footer>
+    <!-- /.post-info -->
+  </section>
+</div>
+<!-- <button onclick="window.open('https://cyberape.space','_self')" id="backbutton" title="Вернуться на главную">◄ Назад</button> -->
+    <footer class="footer">
+      <div class="container">
+        <p class="footer-text">
+          <a href="https://cyberape.space/en">Switch to English</a>
+        <br />
+        <a href="https://cyberape.space" title="Вернуться на главную">Cyber Ape stories</a> is licensed under <a href="https://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer">CC BY 4.0</a>, powered by <a href="https://getpelican.com/">pelican</a> and hosted with &hearts; by <a href="https://github.com/">GitHub</a>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
