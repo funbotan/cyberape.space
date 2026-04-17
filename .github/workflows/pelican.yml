@@ -4,16 +4,15 @@ on:
   push:
     branches:
       - main
-  schedule:
-    - cron:  '0 0 * * *'
 
 jobs:
   pelican:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v6
-    - uses: ./.github/actions/gh-pages-pelican-action
+    - uses: actions/checkout@v2
+      with:
+        submodules: 'true'
+    - uses: rehanhaider/pelican-to-github-pages@latest
       env:
         GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
-        SOURCE_FOLDER: .
-        PELICAN_CONFIG_FILE: publishconf.py
+        GH_PAGES_CNAME: cyberape.space

@@ -21,7 +21,4 @@ Slug: black-attractor
 <iframe width="560" height="315" src="https://www.youtube.com/embed/V6Sev1WZceM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 * [Зачем нам космос](space-business.html) – необходимые пояснения относительно того, как будет развиваться космическая промышленность в ближайшем будущем.
-
 * [Мемы про черный аттрактор](https://t.me/blackattractormemes)
-
-* И [небольшой рассказ](/content/pages/black-attractor/story.pdf), где я предпринимаю первую попытку [превратить все это в искусство](cosmologic-horror.html).
