@@ -22,11 +22,8 @@ TIMEZONE = 'Europe/Moscow'
 DEFAULT_LANG = 'ru'
 
 PLUGIN_PATHS = ['plugins']
-PLUGINS = ['i18n_subsites', 'pelican-ert', 'render_math']
-
-ERT_WPM = 200
-ERT_FORMAT = '{time}'
-ERT_INT = True
+PLUGINS = ['i18n_subsites', 'readtime', 'render_math']
+READTIME_WPM = 200
 
 JINJA_ENVIRONMENT = {'extensions': ['jinja2.ext.i18n']}
 I18N_TEMPLATES_LANG = 'en'

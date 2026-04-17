@@ -1,9 +1,12 @@
 peru
-markdown<3.11
+markdown
 typogrify
 babel
 jinja2
 beautifulsoup4
 rtoml
-pelican
 tzdata
+pelican
+pelican-i18n-subsites
+pelican-render-math
+pelican-readtime

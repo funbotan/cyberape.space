@@ -17,7 +17,7 @@
             <p class="cover-title" style="color:#fff;">{{ article.summary }}</p>
             {% import 'translations.html' as translations with context %}
             {{ translations.translations_for(article) }}
-            <p class="cover-title" style="color:#fff;">{{ gettext('Read time:') }} {{ article.ert }}</p>
+            <p class="cover-title" style="color:#fff;">{{ gettext('Read time:') }} {{ article.readtime_string }}</p>
             </span>
           </div>
           </object>
