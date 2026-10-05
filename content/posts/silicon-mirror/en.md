@@ -5,7 +5,7 @@ category: Пост
 cover: /content/posts/silicon-mirror/cover.jpg
 lang: en
 summary: One more way to tell the same story about AI
-status: draft
+status: hidden
 
 Ever since humans started building machines, they kept trying to explain the mind by analogy with the fanciest machine they had at the time. Antique philosophers pictured it as a hydraulic contraption pumping humors around; the watchmakers of Renaissance imagined it as a clockwork mechanism; and with the advent of computers, only the laziest didn't try to fit the mind into a silicon mold. And while it's easy to see the naïveté of these views in hindsight, it's also hard to deny that with each technological leap, the artificial attempts at replicating intelligence look increasingly more similar to the real thing, and the better our replica, the more we learn about real intelligence from its limitations. As Richard Feynman famously wrote, [“What I cannot create, I do not understand.”](https://www.goodreads.com/quotes/8414-what-i-cannot-create-i-do-not-understand)
 
