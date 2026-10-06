@@ -17,7 +17,7 @@ Without knowing anything about the nature of colors, we may naively assume that 
 
 Knowing this, we can represent any color as a triplet of numbers by measuring how much red, green and blue components it has. We can also draw them as points in 3D space using each component as a coordinate in a corresponding dimension. Note that the same number of dimensions in the space of colors and in our physical space is purely coincidental; these dimensions have nothing to do with each other, although geometry works the same way in both spaces. The space of colors is an example of a *latent space*, and the triplets of numbers that represent colors are examples of *vectors*. Vectors that live in a latent space are known as latent vectors or *embeddings*. In general, a latent space and its vectors can have any number of dimensions, depending on what they represent. Often we draw vectors as arrows starting at zero because dots are not so easily visible.
 
-![]({attach}/silicon-mirror/colors.png)
+![]({static}/content/posts/silicon-mirror/colors.png)
 
 But what is the benefit of this representation? Firstly, we obtain a correspondence between the physical process of color mixing and arithmetic operations on vectors. Secondly, this representation is also maximally *compressed*: it takes up the fewest possible numbers to represent a color because it has no redundant information.
 
@@ -25,7 +25,7 @@ In the case of colors, we knew the fundamental components in advance. But what i
 
 Again, we can start with the assumption that all words are independent of each other, but this assumption will soon be shattered by fairly obvious examples of antonyms, such as “high - low,” “bright - dim,” “help - hinder,” “loud - quiet.” For each pair of antonyms, we can write down an equation of the form “high + low = 0”, “help + hinder = 0”, etc. In a latent space, such words are different directions in the same dimension. But we can go further: the right side of these equations needs not be zero. For example: “damp + cold = dank”, “irony + mockery = sarcasm”, “music + poetry = song”. Then, if we consider four-word equations, we can begin to illustrate the different kinds of relationships between words. For example, “king - man + woman = queen” is a semantic relationship, and “big + less = small + more” is a syntactic one. In a latent space, these would form parallelograms. And we can go further: there is no limit to the complexity of such equations.
 
-![]({attach}/silicon-mirror/geometry.png)
+![]({static}/content/posts/silicon-mirror/geometry.png)
 
 In principle, we could manually write down every possible word equation, express every word through the others, and use geometry to derive the optimal latent representations for them. Problem is, it would take so long that by the time we finish, the spoken language itself will change so much that we will have to do it all over again. This is why the problem of optimal word representation was solved only with the advent of machine learning. The solution came in a simply named [word2vec algorithm](https://arxiv.org/abs/1301.3781). The general public might remember it from some meme-worthy examples of verbal equations:
 
@@ -39,13 +39,13 @@ The details of the algorithm are not especially relevant for us today. The impor
 
 An interesting property of language is that embeddings of words from different languages will form a very similar geometric structure, and by overlaying the latent spaces of different languages, one can create a dictionary for translation between them *without a single example of actual translation*. This property has been known for a long time, albeit in a different formulation, and was used by archaeologists to decipher dead languages long before machine learning. It indicates that embeddings are not arbitrary but are an objective property (or rather, a homomorphic image) of what they are encoding. So, in principle, different methods for calculating embeddings of the same objects should converge to similar results.
 
-![]({attach}/silicon-mirror/translation.png)
+![]({static}/content/posts/silicon-mirror/translation.png)
 
 However, you may have already noticed a problem with the idea of word embeddings: what if the same word has different meanings in different contexts? Is “bat” an animal or a piece of sports equipment? Is “plant” an organism or a factory? “Free” as in “freedom” or “free stuff”? The solution to this problem was a mechanism that takes a sequence of embeddings and selectively “diffuses” the meanings between them, clarifying each one. Perform this procedure many times over, and the individual meanings of words will eventually fuse into a cohesive whole: an embedding of the whole text that captures its general meaning without tying it to any specific words. This is how all contemporary AI systems “understand” what you ask of them, and they also develop this ability automagically by feeding on gigantic piles of human-written text.
 
 In a similar fashion we can calculate embeddings for anything, provided that we have a sufficient number of examples illustrating relationships between the objects in question (training data). If you ever solved a captcha like “select all squares that contain X to prove you're not a robot”, you helped some corporation (most likely Google) create better image embeddings.
 
-![]({attach}/silicon-mirror/captcha.png)
+![]({static}/content/posts/silicon-mirror/captcha.png)
 
 The reverse of this operation, the un-embedding, is messier and differs between text and images, but its specifics are also not relevant for our purposes today. The important part is to understand that we have procedures to embed and un-embed data. Because embeddings capture only the general meaning, the un-embedding will not reconstruct the original data, but rather something that is meaningfully similar.
 
